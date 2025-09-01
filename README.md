@@ -41,3 +41,5 @@ El workflow corre en cada **push** y **pull request**.
 - Historial de commits por integrante
 - Ejecuciones de CI (pestaña Actions) pasando/fallando
 - README con badge verde
+
+## Cambios de prueba para Pull Request
