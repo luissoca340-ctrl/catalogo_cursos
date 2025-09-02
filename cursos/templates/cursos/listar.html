@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cursos</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Cursos</h1>
+        <!-- Botón Crear Curso -->
+        <a href="{% url 'crear_curso' %}" class="create-button">Crear nuevo curso</a>
+        
+        <div class="course-list">
+            {% for curso in cursos %}
+                <div class="course-card">
+                    <h2>{{ curso.curso }}</h2>
+                    <p>Duración: {{ curso.duracion }}</p>
+                    <p>Plataforma: {{ curso.plataforma }}</p>
+                    <p>Dificultad: {{ curso.dificultad }}</p>
+                    <div class="card-buttons">
+                        <a href="{% url 'editar_curso' curso.pk %}" class="submit-button">Editar</a>
+                        <a href="{% url 'eliminar_curso' curso.pk %}" class="submit-button delete" onclick="return confirmDelete();">Eliminar</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Script para confirmar eliminación -->
+    <script>
+        function confirmDelete() {
+            return window.confirm("¿Estás seguro de que deseas eliminar este curso?");
+        }
+    </script>
+</body>
+</html>
