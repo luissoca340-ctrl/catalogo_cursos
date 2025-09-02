@@ -31,9 +31,9 @@ El workflow corre en cada **push** y **pull request**.
 4. Merge solo si el CI pasa ✅
 
 ## Integrantes y Roles
-- Scrum Master: (nombre)
-- Dev Backend (Django): (nombre)
-- GitHub & CI/CD (tú): (tu nombre)
+- Scrum Master: (Frabricio)
+- Dev Backend (Django): (nick camana)
+- GitHub & CI/CD (tú): (luis soca)
 
 ## Evidencias sugeridas (para el video)
 - PRs revisados
