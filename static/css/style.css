@@ -1,0 +1,183 @@
+/* === Estilos Globales === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2d42; /* Fondo oscuro y moderno */
+    color: #f8f8f8; /* Texto claro para contraste */
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* === Contenedor Principal === */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* === Títulos === */
+h1, h2 {
+    font-size: 2rem;
+    color: #eaeaea; /* Color claro y suave para títulos */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #f4a261; /* Naranja suave para subtítulos */
+}
+
+/* === Botón Crear Curso === */
+.create-button {
+    background-color: #d94e4e; /* Rojo oscuro */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: block;
+    margin: 20px auto 50px auto; /* Centrado y márgenes ajustados */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.create-button:hover {
+    background-color: #e63946; /* Rojo brillante */
+    transform: scale(1.05); /* Efecto hover más visible */
+}
+
+.create-button:focus {
+    outline: none;
+}
+
+/* === Estilos para el Formulario === */
+.form-container {
+    background-color: #3a3f58; /* Fondo oscuro para formularios */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra fuerte para formularios */
+    margin-bottom: 50px;
+}
+
+/* === Formulario === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form select, form button {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0;
+    outline: none;
+    background-color: #4e5b6e; /* Fondo más oscuro en los campos */
+    color: #f4f4f4; /* Color claro para el texto */
+}
+
+form input:focus, form select:focus {
+    border-color: #ffb74d; /* Amarillo cálido al hacer foco */
+    box-shadow: 0 0 5px rgba(255, 182, 77, 0.6);
+}
+
+/* === Botón de Guardar === */
+.submit-button {
+    background-color: #4caf50; /* Verde oscuro */
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+}
+
+.submit-button:focus {
+    outline: none;
+}
+
+/* === Lista de Cursos === */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* === Estilo de las Tarjetas === */
+.course-card {
+    background-color: #3a3f58; /* Fondo oscuro para las tarjetas */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); /* Sombra más profunda */
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+
+.course-card h2 {
+    color: #ffb74d; /* Naranja cálido para títulos */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    color: #eaeaea; /* Texto claro para descripciones */
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* === Botones dentro de las Tarjetas === */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+.card-buttons a {
+    background-color: #ffb74d; /* Naranja cálido */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+    width: 48%;
+    text-align: center;
+}
+
+.card-buttons a:hover {
+    background-color: #ff9800; /* Naranja más intenso */
+}
+
+.card-buttons a.delete {
+    background-color: #e53935; /* Rojo oscuro para eliminar */
+}
+
+.card-buttons a.delete:hover {
+    background-color: #d32f2f; /* Rojo más fuerte */
+}
