@@ -1,7 +1,6 @@
 # Catálogo de Cursos Online — CRUD (Django)
 
-![Django CI](https://github.com/USUARIO/REPO/actions/workflows/django.yml/badge.svg)
-
+![Django CI]
 Proyecto CRUD con Django aplicando Scrum, XP, GitHub y CI (GitHub Actions).
 
 ## Cómo ejecutar localmente
